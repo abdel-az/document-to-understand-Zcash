@@ -39,13 +39,13 @@ At a given point in time, each full validator is aware of a set of candidate blo
 Each block contains one or more transactions. Transparent inputs to a transaction insert value into a transparent transaction value pool associated with the transaction, and transparent outputs remove value from this pool. As in Bitcoin, the remaining value in the pool is available to miners as a fee. Consensus rule: The remaining value in the transparent transaction value pool MUST be nonnegative.
 
 
-### 3. 1Multiple transaction types
+### 3. 1 Multiple transaction types
 
 Four type of transaction has exist Private, Deshielding, shielding and public. Zcash addresses are either private (z-addresses) or transparent (t-addresses). Z-addresses start with a &quot;z,&quot; and t-addresses start with a &quot;t.&quot;
 
 A Z-to-Z transaction appears on the public blockchain, so it is known to have occurred and that the fees were paid. But the addresses, transaction amount and the memo field are all encrypted and not publicly visible. Using encryption on a blockchain is only possible through the use of zero-knowledge proofs
 
-The owner of an address may choose to disclose z-address and transaction details with trusted third parties — think auditory and compliance needs — through the use of view keys and payment disclosure.
+The owner of an address may choose to disclose z-address and transaction details with trusted third parties â€” think auditory and compliance needs â€” through the use of view keys and payment disclosure.
 
 Transactions between two transparent addresses (t-addresses) work just like Bitcoin: The sender, receiver and transaction value are publicly visible. While many wallets and exchanges exclusively use t-addresseses today, many are moving to shielded addresses to better protect user privacy.
 
